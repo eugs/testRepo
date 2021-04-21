@@ -5,7 +5,7 @@ pipeline {
         
         stage('Hello') {
             steps {
-                sh label: 'run', script: 'echo Hello from Git, Pipeline World'
+                sh label: 'run', script: 'echo MacOS script was executed for Project1 repo1'
                 
             }
         }

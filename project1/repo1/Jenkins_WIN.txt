@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    stages {
+        
+        stage('Hello') {
+            steps {
+                sh label: 'run', script: 'echo Win script was executed for Project1 repo1'
+                
+            }
+        }
+
+    }
+    
+    post {
+        
+        success {
+          echo 'OK'
+        }
+        
+        failure {
+          echo 'TESTS FAILED'
+        }
+
+    }
+    
+}
